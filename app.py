@@ -60,7 +60,7 @@ with st.container(border=True):
 
 with st.container(border=True):
     st.header("Percentage Number of Students by Branches of Science")
-    st.image("dashboard/pie chart.png")
+    st.image("datasets_and_chart/pie chart.png")
     col1, col2 = st.columns(2)
     with col1:
         with st.expander("DataFrame"):
