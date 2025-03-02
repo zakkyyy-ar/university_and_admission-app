@@ -9,7 +9,7 @@ st.caption("By : Zakky")
 question_1_higher_education = pd.read_csv('dashboard/question_1_higher_education.csv',delimiter=',')
 question_1_higher_education['Acceptance Rate (In Percent)'] = question_1_higher_education['Acceptance Rate (In Percent)'].round(2)
 
-question_1_vocational_education = pd.read_csv("question_1_Vocational_education.csv",delimiter=',')
+question_1_vocational_education = pd.read_csv("dashboard/question_1_Vocational_education.csv",delimiter=',')
 question_1_vocational_education['Acceptance Rate (In Percent)'] = question_1_vocational_education['Acceptance Rate (In Percent)'].round(2)
 
 question_2 = pd.read_csv("dashboard/question_2.csv",delimiter=',')
