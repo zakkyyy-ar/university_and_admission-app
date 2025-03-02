@@ -60,18 +60,7 @@ with st.container(border=True):
 
 with st.container(border=True):
     st.header("Percentage Number of Students by Branches of Science")
-    fig,ax = plt.subplots()
-    plt.pie(question_3['Number of Students'],
-            labels=None,
-            )
-    labels_legend = [f"{j} ({p}%)" for j, p in zip(
-        question_3['Branches of Science'], question_3['Percentage'])]
-    plt.legend(title="Branches of Science",
-            labels=labels_legend,
-            loc="best",
-            bbox_to_anchor=(0, 0, 0, 1))
-    plt.title("Percentage Number of Students by Branches of Science")
-    st.pyplot(fig)
+    st.image("pie chart.png")
     col1, col2 = st.columns(2)
     with col1:
         with st.expander("DataFrame"):
