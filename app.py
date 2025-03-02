@@ -6,17 +6,17 @@ st.set_page_config(page_title ="Data Analyst Project : University and Vocational
 st.title("Data Analyst Project : University and Vocational schools admission")
 st.caption("By : Zakky")
 
-question_1_higher_education = pd.read_csv('dashboard/question_1_higher_education.csv',delimiter=',')
+question_1_higher_education = pd.read_csv('datasets_and_chart/question_1_higher_education.csv',delimiter=',')
 question_1_higher_education['Acceptance Rate (In Percent)'] = question_1_higher_education['Acceptance Rate (In Percent)'].round(2)
 
-question_1_vocational_education = pd.read_csv("dashboard/question_1_Vocational_education.csv",delimiter=',')
+question_1_vocational_education = pd.read_csv("datasets_and_chart/question_1_Vocational_education.csv",delimiter=',')
 question_1_vocational_education['Acceptance Rate (In Percent)'] = question_1_vocational_education['Acceptance Rate (In Percent)'].round(2)
 
-question_2 = pd.read_csv("dashboard/question_2.csv",delimiter=',')
+question_2 = pd.read_csv("datasets_and_chart/question_2.csv",delimiter=',')
 
-question_3 = pd.read_csv("dashboard/question_3.csv",delimiter=',')
+question_3 = pd.read_csv("datasets_and_chart/question_3.csv",delimiter=',')
 
-question_4 = pd.read_csv("dashboard/question_4.csv",delimiter=',')
+question_4 = pd.read_csv("datasets_and_chart/question_4.csv",delimiter=',')
 
 with st.container(border=True):
     st.header("Group of professions with smallest acceptance rate every year based on Education level")
